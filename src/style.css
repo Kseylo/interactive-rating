@@ -5,3 +5,8 @@
 body {
     font-family: 'Overpass', sans-seif;
 }
+
+.active-rating {
+    color: white;
+    background-color: theme(colors.gray.500);
+}
