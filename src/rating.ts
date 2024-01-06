@@ -1,5 +1,7 @@
 const ratings = document.querySelectorAll('#rating')
 const submitBtn = document.getElementById('submit-btn')
+const ratingForm = document.getElementById('rating-form')
+const thankYou = document.getElementById('thank-you')
 
 let selectedRating = 0
 
@@ -27,6 +29,10 @@ ratings.forEach((item, index) => {
 
 submitBtn?.addEventListener('click', () => {
     if (selectedRating > 0) {
-        console.log(`Selected Rating: ${selectedRating}`)
+        ratingForm?.classList.add('hidden')
+        document.getElementById('rating-state')!.innerHTML =
+            `You selected ${selectedRating} out of 5`
+        thankYou?.classList.add('flex')
+        thankYou?.classList.remove('hidden')
     }
 })
