@@ -1,9 +1,8 @@
-const ratings = document.querySelectorAll('#rating')
+const ratings = document.querySelectorAll('#ratings > li')
 const submitBtn = document.getElementById('submit-btn')
 const ratingForm = document.getElementById('rating-form')
 const thankYou = document.getElementById('thank-you')
-
-let selectedRating = 0
+let selectedRating= 0
 
 function handleRatingClick(index: number) {
     if (selectedRating === index + 1) {
